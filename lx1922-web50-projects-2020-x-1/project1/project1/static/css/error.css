@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+
+#header {
+    background-color: #021c1e;
+    color:white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Sacramento', cursive;
+    padding-top: 15px;
+}
+
+#message {
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 35%;
+    font-size: 30px;
+    font-family: 'Josefin Slab', sans-serif;
+}

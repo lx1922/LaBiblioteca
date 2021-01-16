@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<a href="{{ url_for('login') }}">Logout</a>
+<div class="book"> 
+        <div id="isbn">ISBN: {{ book.isbn }}</div>
+        <div id="title">Title: {{ book.title }}</div>
+        <div id="author">Author: {{ book.author }}</div>
+        <div id="year">Year: {{ book.year }}</div>
+        <div id="rating_count">No of Rating: {{ rating_count}}</div>
+        <div id="rating">Average Rating: {{ rating }}</div>
+        <form action="{{ url_for('review', isbn=book.isbn) }}" method="post" id="reviewform">
+                <div class="form-group">
+                        <label>Rating:</label>
+                        <input type="number" min="0" max="5" name="rating" class="form-control" id="ratings" placeholder="Rating">
+                </div>
+                <div class="form-group">
+                        <label >Review:</label>
+                        <input type="text" name="review" class="form-control" id="reviews" placeholder="Review">
+                </div>
+                <div id="button"><button class="btn btn-primary" id="submit">Submit Review</button></div>
+        </form>
+        <div id="review">
+                {% for re in review %}
+                <ul id="inner">
+                    <li> User: {{ re.username }} </li>
+                    <li> Review: {{ re.review }} </li>
+                    <li> Rating: {{ re.rating }} </li>
+                </ul>
+            {% else %}
+            No Reviews Found!
+        {% endfor %}
+        </div>
+</div>
+{% endblock %}

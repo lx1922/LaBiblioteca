@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='icons/books.png') }}" type="image/icon type">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/searchresults.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>La Biblioteca</title>
+</head>
+<body>
+    <header id="header">La Biblioteca</header>
+    <a href="{{ url_for('login') }}">Logout</a>
+    <div id="results">
+        <ul id="mainlist">
+        {% for book in results %}
+            <li><a href="{{ url_for( 'book', isbn=book.isbn) }}">
+                <ul id="inner">
+                    <li> ISBN: {{ book.isbn }} </li>
+                    <li> Title: {{ book.title }} </li>
+                    <li> Author: {{ book.author }} </li>
+                    <li> Year: {{ book.year }} </li>
+                </ul>
+            </a></li>
+            {% else %}
+            No Books Found!
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

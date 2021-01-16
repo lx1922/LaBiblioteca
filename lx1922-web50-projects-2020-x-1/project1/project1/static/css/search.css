@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+#header {
+    background-color: #021c1e;
+    color:white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Sacramento', cursive;
+    padding-top: 15px;
+}
+
+#container {
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 10px;
+}
+
+#welcome {
+    padding:5px 5px 5px 5px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#login, #Italian {
+    font-size: 35px;
+    padding:5px 5px 5px 5px;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+}

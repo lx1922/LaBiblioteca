@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+#header {
+    background-color: #021c1e;
+    color:white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Sacramento', cursive;
+    padding-top: 15px;
+}
+
+#booksearch {
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 35%;
+    height: 50px;
+    padding: 15px;
+}

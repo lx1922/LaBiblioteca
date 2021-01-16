@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+
+#header {
+    background-color: #021c1e;
+    color:white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Sacramento', cursive;
+    padding-top: 15px;
+}
+
+.book {
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 35%;
+}
+
+#isbn, #title, #author, #year, #rating_count, #rating {
+    font-size: 30px;
+    font-family: 'Josefin Slab', sans-serif;
+    text-align: center;
+} 
+
+#button {
+    justify-content: space-around;
+}
+
+#review {
+    padding: 20px;
+}
+
+#review ul {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Josefin Slab', sans-serif;
+}

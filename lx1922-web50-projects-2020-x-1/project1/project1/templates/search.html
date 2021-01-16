@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='icons/books.png') }}" type="image/icon type">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>La Biblioteca</title>
+</head>
+<body>
+    <header id="header">La Biblioteca</header>
+    <a href="{{ url_for('login') }}">Logout</a>
+    <div id="container">
+        <div id="welcome">
+            Benvenuti in biblioteca, {{ name }}!
+        </div>
+        <div id="Italian">
+            Wondering why so much Italian? I like the language!
+        </div>
+        <div id="login">
+            Now that you have a account set up let's <a href="{{ url_for('login') }}">LOGIN</a>!
+        </div>
+    </div>  
+</body>
+</html>
